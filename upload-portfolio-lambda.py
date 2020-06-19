@@ -23,7 +23,7 @@ def lambda_handler(event, context):
                 portfolio_bucket.upload_fileobj(obj, nm)
                 portfolio_bucket.Object(nm).Acl().put(ACL='public-read')
 
-        print "Job done!"
+        print ("Job done!")
         topic.publish(Subject="Portfolio Deployed", Message="Portfolio deployed successfully!")
 
     except:
