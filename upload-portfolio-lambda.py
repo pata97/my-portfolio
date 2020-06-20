@@ -3,7 +3,6 @@ from botocore.client import Config
 import StringIO
 import zipfile
 
-
 def lambda_handler(event, context):
     sns = boto3.resource('sns')
     topic = sns.Topic('arn:aws:sns:us-east-1:024223368277:deployPortfolioTopic')
@@ -25,7 +24,6 @@ def lambda_handler(event, context):
 
         print "Job done!"
         topic.publish(Subject="Portfolio Deployed", Message="Portfolio deployed successfully!")
-
     except:
         topic.publish(Subject="Portfolio Deploy Failed", Message="The Portfolio was not deployed successfully!")
         raise
