@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
     "webpack-watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patalexander/my-portfolio.git"
+    "url": "https://github.com/patalexander/my-portfolio.git"
   },
   "author": "Patricia Alexander <patalexander71@gmail.com>",
   "license": "ISC",
