@@ -51,7 +51,7 @@
           }
 
            this.buttonClicked = this.buttonClicked.bind(this);
-        }
+         }
 
         buttonClicked(evt) {
           let name = this.refs.nameInput.value;
@@ -59,7 +59,7 @@
           this.setState({
             message: {
               type: name ? "success" : "error",
-              body: name ? "Welcome to React, " + name : "You must enter a name!"
+              body: "Welcome to React, " + name : "You must enter a name!"
             }
           });
 
