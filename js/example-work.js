@@ -7,7 +7,7 @@ class ExampleWork extends React.Component {
 
         { this.props.work.map( (example, idx) => {
             return (
-              <ExampleWorkbubble example={example} key={idx}/>
+              <ExampleWorkBubble example={example} key={idx} />
             )
           })
         }
@@ -38,3 +38,4 @@ class ExampleWorkBubble extends React.Component {
   }
 }
 export default ExampleWork;
+export { ExampleWorkBubble };
